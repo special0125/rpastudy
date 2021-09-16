@@ -5017,9 +5017,9 @@
     "restore": {
       "projectUniqueName": "Session05",
       "projectName": "Session05",
-      "projectPath": "C:\\Users\\Admin\\Documents\\UiPath\\Session05\\.local",
+      "projectPath": "C:\\RPA\\UIPath_study\\UiPath\\Session05\\.local",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\UiPath\\Session05\\.local"
+      "outputPath": "C:\\RPA\\UIPath_study\\UiPath\\Session05\\.local"
     },
     "frameworks": {
       "net461": {
