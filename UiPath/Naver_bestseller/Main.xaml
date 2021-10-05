@@ -1,0 +1,232 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="843.2,2799.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="30">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="33">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="730.4,2734.4" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: NAVER" sap:VirtualizedContainerService.HintSize="687.2,2643.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="675.2,2421.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="632,23.2" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <uix:NClick ClickType="Single" DisplayName="Click '책'" sap:VirtualizedContainerService.HintSize="632,165.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.naver.com/" DesignTimeRectangle="1094, 373, 18, 38" ElementType="Text" FriendlyName="'책'" FullSelectorArgument="&lt;webctrl aaname='책' parentid='NM_FAVORITE' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='책' parentid='NM_FAVORITE' tag='A' type='' check:text='책' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAqCAYAAAC3DKvtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD3SURBVEhL7ZShDoJQFIbvY/AAPoCVapPIRrE5ItFMYTeSfAdoFDefwA2bNm0YCAQDkWD4vcDZHTrZkIlDd7/t37jncr6dHTYYBkKJJUosUWLJH4ljj4ExES+mCrHndZ1xlDdZaL587xviDIFFsraUzSMSPxK7DVkTKX5KN/EB/pQalhFyqlb0Fxfiw+mNJg2LMKE7Qa9V3DJs3Rm0qlEHX3Po9OyEp3ryt8VpBHtSNohoBvxjUZWTjUNykXItfSbOdxyG5SO+UoEozgFWcxvBRRx6reKDtIvTAGY1Wcd0nngwcUfa/ilKLBmvuA0lliixRIklvyYG7nh++eCk+gnEAAAAAElFTkSuQmCC" InformativeScreenshot="d1f1d1828cb4affef759d59702b1c051.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='NAVER' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click '베스트셀러'" sap:VirtualizedContainerService.HintSize="632,165.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://book.naver.com/" DesignTimeRectangle="624, 172, 109, 48" ElementType="Text" FriendlyName="'베스트셀러'" FullSelectorArgument="&lt;webctrl aaname='베스트셀러' parentid='lnb' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='베스트셀러' parentid='lnb' tag='A' type='' check:text='베스트셀러' /&gt;" ImageBase64="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" InformativeScreenshot="37e6fcfe17a3d6c28217d0b2ab2b4a19.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='네이버 책' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="632,1856" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" WorkbookPath="[string.Format(&quot;{0}\이름.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory))]">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="620,1581.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelForEachRow DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="576.8,1490.4" sap2010:WorkflowViewState.IdRef="ExcelForEachRow_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="True">
+                      <ueab:ExcelForEachRow.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="564.8,1300.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ClickType="Single" DisplayName="Click 'YES24'" sap:VirtualizedContainerService.HintSize="521.6,165.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://book.naver.com/bestsell/bestseller_list.naver" DesignTimeRectangle="371, 440, 105, 38" ElementType="Text" FriendlyName="'YES24'" FullSelectorArgument="&lt;webctrl id='yes24_bestseller' tag='A' /&gt;" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl id='yes24_bestseller' tag='A' type='' aaname='{0}' check:text='{1}' /&gt;{2}&quot;, CurrentRow.ByField(&quot;도서&quot;), CurrentRow.ByField(&quot;도서&quot;), Environment.NewLine)]" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAqCAYAAAC5pdWCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAaFSURBVHhe7Zd5bFRVGMWriawKERVBjEtIaLRG1ChoNSQqCWpQEEnBRIhB0QgaIoJUDVCK2ABlr5QCrRTKUra2tBYoW+lCl5m2M12n+77v+zo9nu+VmQy04D9CfO07yU3befe9N72/e77vXDtoUp00aCqUBk2F0qCpUBo0FUqDpkJp0FQoDZoKpUFToTRoKpQGTYXSoKlQGjQVSoOmQmnQVCgrNEN5izLKmztvftKntq4eFDZ0ILWyBdk1bTBW9M0baFju7TH3oqqlC+F59TibVo2LWXVIq2xFV49ZuS5q6exBRnUrgjNqEJpZi3Rel3fdrob2biSUNuMc56VXtaK5o/+coSYrtCNJlfglLA/74suQycW0KCK/AW4RRXC5WoBgUy1W/J2Db4OyBhzBphq0d5uRU9uGTeGF+Nw/HR8dTsFnx9OU+4K48AKzoqkTIXzW9yHZ+MQvFZ8eTcNyXvc1VirXBbqovcuMG0VN+Do4Gx9z3jFeL+O9Q11WaN76crzmmYBp+5PgEVeKTrpCdvmqC3mw36XDez5GnEiuwrg/ojHcJRITt8Tghd26W4ZHbCnKuag+iRUYvzkGU3bGY9q+REz9U49n3ePwgW8KrnMThNBZ80+kY+TGKOWajPFbYzHd24hreQ0KeJHAdw0vgp1rFOzWXofrtUJ+1q5cs1VDWzcq6fLe3l5lDHZZodXyH3c6Y8LozbGYdSxNKXWygNO9EvH89nj8dqkApY0dCqzn+Peqi/kIy6m/ZciC6kqaMNsvDU/v1OF0eg1LnlkpjcvO5WA0IW2LLsZSumqYWwwcCDSjug1pLHtL6dTJO+KxMbwYjdwsIl+6/2WPBAXY3aBdZvk9pCuDmQ4dUtC6enpxMrUaMw8lw56uWXu5APNOZOBJOmbR6QwklTVboTns0WMvy2g9F9d2iENk3gJ/E8ZsiYUznyH9SDaArqQZnrwnkCCdL+XjwyOpLLvFymapbu3CyvO5mMR7lgfnoK6tC1dy6/FlYBZe9UrCvGN05YbIO0JzjyrGtL0J2Hg5X/mO3fxfBrOs0EQlDBzrrhTAni55cTdLFoE5slxK6ZTgYIH2uNsNzPJNxo+hOdaxlQsXT5cV1nfQTSUYy3I4dW8inFgG11zMw35dOULpiFS6LrqwkeGDv1e0Kq4Ky67DXLrbnuXUPbIEJvbUH9jvnE5mYHVYPlaG5uJhuvRO0Naz344i1Ff26LAjsojfof+cwaRboInOc2ElHEg5GuYaCWeGkxQmRpEF2kPsaU9tjcFLXCTLmMMwEZBWo8BNoNu+YLlzPGggfJ3SE2ccNGI1+2NMUSOaOUd6pvS/YPa3r4Ky4XjAgMWnTUpJ9qAjZ3gbsIwB5Dj76IqQHAXaz4RvZEqVqmArgTbCJQJTdsRhA92Ww5Q7mNUPmpSyXTEleHDddUzYFocAJj7pSyILtHEcC06Z4BFTah0++goYy1rQwRJZ2dKJEs4VN4lzFvpn4DG3aOWZ4mQ5PhTQDQLkbcJ8ZpceiwKycJUlUd7v4JmItw4YsYYu207XzuWGkPIoKTSA5bWOJdVWklSnbI/DSkIuk/J4M30OVvWDJnFbzlbDuHOnexkQWdBobe62PU36U2NHt3XI+Unco2cPW3wmE15x5cjijpcEKinwsKFCSZ5LzprgGVcGZ7pmAsuvg0cin1WulD2J+PKOSUySw/n+Mb9H4dFN0RhJxz9A54/iTzlaJN90vkVB/L7uTJnV3CzdZvOgDyP9oInkICvQ3uFuv8FyZpEF2kT2q+9YsgSu7ZDDr8x/1ycZr/NeL/ZCSZMS87ex540lhG8YLpYEZmMyy6a4Zz7DjrjJn66T915geT6VWoWTKX1jN10/92iqMteJ5z6Zc7vTpMzmcoMMuchvq3+DNoL9xcFDrxycbYefoVIJET+xdz3BY8FMnsuWnM2k80w8oyXzzJaE9UyUc46nw47Pl3c47jcooUbul9DicqVQcadF4lY59D9ylyAy1DQgtMiCBgYHA0tR9i2lqIrlZ7ZfCt7k2W2gcUBfhiaWydjiJiwkqDf4mYMSVPTK87awvwUyrPzKXjXQ/QJWzoO20IqYaD152H//LyO8E8qVXjnUNSC0/0rikgj2xDhClJJmHgKl637onkKT1GkJKZLohkK/uR+6p9A03Rtp0FQoDZoKpUFToTRoKpQGTYXSoKlQGjQVSoOmQmnQVCgNmgqlQVOhrNBaW1u18T8ffQL+AWJaj2kCBf7lAAAAAElFTkSuQmCC" InformativeScreenshot="4289adce922eac1a90b55050913e1307.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='종합, YES24, 베스트셀러 : 네이버 책' /&gt;" SearchSteps="FuzzySelector, Image" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="521.6,1003.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" UseTemplate="True" WorkbookPath="[string.Format(&quot;{0}\{1}.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory), CurrentRow.ByField(&quot;서점&quot;))]">
+                              <ueab:ExcelApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel2" />
+                                  </ActivityAction.Argument>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="509.6,705.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Excel2.Sheet(&quot;Sheet1&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='정가'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='제목'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='Url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='dl' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='dl' idx='1' /&gt;&lt;webctrl tag='dd' /&gt;&lt;webctrl tag='del' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='text' name2='Column4' attr2='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='dl' idx='1' /&gt;&lt;webctrl tag='dt' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="466.4,165.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="0">
+                                      <uix:NExtractData.Target>
+                                        <uix:TargetAnchorable DesignTimeRectangle="534, 440, 1038, 4804" FriendlyName="'OL'" FullSelectorArgument="&lt;webctrl tag='OL' /&gt;" InformativeScreenshot="fe00e7241bae02157a1ae419bcf4c748.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='종합, 인터파크 도서, 베스트셀러 : 네이버 책' /&gt;" SearchSteps="Selector" />
+                                      </uix:NExtractData.Target>
+                                    </uix:NExtractData>
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="466.4,407.2" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                                      <ui:CommentOut.Body>
+                                        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="452.8,330.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ueab:SaveExcelFileAsX DisplayName="Save Excel File As" FilePath="[string.Format(&quot;{0}\{1}.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory), CurrentRow.ByField(&quot;도서&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="412,212" sap2010:WorkflowViewState.IdRef="SaveExcelFileAsX_2" SaveAsFileType="OpenXmlWorkbook" Workbook="[Excel2]" />
+                                        </Sequence>
+                                      </ui:CommentOut.Body>
+                                    </ui:CommentOut>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelApplicationCard.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ueab:ExcelApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRow.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ExcelForEachRow>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1098" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIfSURBVFhHxZZPT1NBFMVvcjbGhZv3KVz6aVSgtCoFNm5c+T1IdMnGL2AaIyFGhAoUaANiqUVflRhjQwzGhCY2RrzeqxM603c72znJLzmdN+d03r92CD8WagInokb4Ps8pIXwTkxDCaZVTQujPcUoIX+5xSgifxSSEcHKXU0L4eIej5CXO8mrAlbzM6FVGc3plznrzhXmaDboMCLmYGN1pHtfT8ybjeGY050PZHQml2aDLgPBeziRGZ8rVhbrfX5YvkDPUOcezbjSUZgt9YxC6YmK07QUM//ziG/lDxrvZf1jSrNnpQejI/Yzx9rarK6o7/MrXjuRStktuJJRmzU4PQlvOIMabW67O1vLZGuPQvkqaNTs9CIdiYuzHF6Ca+bTkXCjNmp0ehAN5kGK0brq6yTq/+OlcKM2anR6EfTEx9uwFDC6Gzk2WZs1OD0JLLkWMHfsWVHqPnJsszZqdHoSmmBgNewFZa46X+ivuky3Nmp0ehF15HWJs2a9h1lzgqztlPhicuJGiNGt2ehAaYmJsTljAnuzptkt8vfWAB7/t50GzZqcHYUt+kWLU7Xc8ayz+P/66xJXuYzcaSrOFvjEIm2JibEQWcDlnmp+c1t2RkTQbdBkQ6vJTGmNdXpdX8q8WIP+EG3IJL+dJmY6Nz9Os32VAWBeTEMKa7EwSQngpe7OEEF6ISQhhVfbnCSGsiEkI4bnsXhNCeFatCZyGau0vnrb5PVYj75UAAAAASUVORK5CYII=" InformativeScreenshot="bfc12b4d6281598b07a13124fd1496ba.png" Selector="&lt;html app='chrome.exe' title='NAVER'/&gt;" Url="https://www.naver.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>

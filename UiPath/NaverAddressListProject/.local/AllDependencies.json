@@ -5017,9 +5017,9 @@
     "restore": {
       "projectUniqueName": "NaverAddressListProject",
       "projectName": "NaverAddressListProject",
-      "projectPath": "C:\\RPA\\UIPath_study\\UiPath\\NaverAddressListProject\\.local",
+      "projectPath": "C:\\RPA\\NaverAddressListProject\\.local",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\RPA\\UIPath_study\\UiPath\\NaverAddressListProject\\.local"
+      "outputPath": "C:\\RPA\\NaverAddressListProject\\.local"
     },
     "frameworks": {
       "net461": {

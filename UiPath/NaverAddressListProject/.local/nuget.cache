@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ex3zGhz9pQoY6C2DPLFMPOerfY/PdgxnYvkFVM45tc47f2MOY0iz9luo8O8FDhpvn/Vw9mAgPyNuckfszNTWYA==",
+  "dgSpecHash": "u2o1/44MVNMPBa+C2BCNkJXzZL3b+ja+WXgorA9gwChZ+VRvUkAz5XdOBMgXrY1dbIj+Hni8jDBOI3IyfoeeyQ==",
   "success": true,
-  "projectFilePath": "C:\\RPA\\UIPath_study\\UiPath\\NaverAddressListProject\\.local\\",
+  "projectFilePath": "C:\\RPA\\NaverAddressListProject\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
@@ -75,7 +75,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "filePath": "C:\\RPA\\UIPath_study\\UiPath\\NaverAddressListProject\\.local",
+      "filePath": "C:\\RPA\\NaverAddressListProject\\.local",
       "message": "Microsoft.Extensions.Primitives 3.1.6 depends on System.Memory (>= 4.5.2) but System.Memory 4.5.2 was not found. An approximate best match of System.Memory 4.5.3 was resolved.",
       "libraryId": "System.Memory",
       "targetGraphs": [
